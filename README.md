@@ -58,6 +58,6 @@ Attributes and their description.
 - computed_region_sbqj_enih = Police Precincts
 
 ## Acknowledgments
-All work was done by [myself](https://github.com/janampatel15), and [Ambrose Karella](https://github.com/ajkarella).
+All work was done by [myself](https://github.com/janampatel15), [Ambrose Karella](https://github.com/ajkarella), [Naimish Bizzu](https://github.com/Naimishvinnu).
 
 Thanks to [NYC Open Data](https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u) for the data and [Socrata](https://dev.socrata.com/) for the amazing API.
