@@ -5,16 +5,15 @@ from sqlalchemy import create_engine
 from pandas.io import sql
 
 # Database creds
-hostname=''
-dbname=''
-uname=''
-pwd=''
-engine = create_engine("mysql+pymysql://{user}:{pw}@{host}/{db}".format(host=hostname, db=dbname, user=uname, pw=pwd))
-
+hostname = ''
+dbname = ''
+uname = ''
+pwd = ''
+engine = create_engine("".format(host=hostname, db=dbname, user=uname, pw=pwd))
 
 
 def get_data(amount):
-    j = amount*1000
+    j = amount * 1000
     print('---------', j)
     df = pd.read_json(
         'https://data.cityofnewyork.us/resource/8h9b-rp9u.json?$offset=%s' % j)
@@ -31,7 +30,6 @@ def main():
 
         for f in concurrent.futures.as_completed(results):
             fdb = pd.concat([fdb, f.result()])
-
 
     finish = time.perf_counter()
     print('\n\n\n')
